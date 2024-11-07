@@ -1,0 +1,58 @@
+..........###[ Ethernet ]### 
+  dst       = ff:ff:ff:ff:ff:ff
+  src       = 08:00:00:00:01:01
+  type      = n_802_1Q
+###[ 802.1Q ]### 
+     prio      = 0
+     id        = 0
+     vlan      = 1
+     type      = IPv4
+###[ IP ]### 
+        version   = 4
+        ihl       = 6
+        tos       = 0x0
+        len       = 38
+        id        = 1
+        flags     = 
+        frag      = 0
+        ttl       = 64
+        proto     = udp
+        chksum    = 0x43c0
+        src       = 10.0.1.1
+        dst       = 10.0.2.2
+        \options   \
+         |###[ MRI ]### 
+         |  copy_flag = 0
+         |  optclass  = control
+         |  option    = 31
+         |  length    = 4
+         |  count     = 0
+         |  \swtraces  \
+###[ UDP ]### 
+           sport     = 1234
+           dport     = 4321
+           len       = 14
+           chksum    = 0x7ff8
+###[ Raw ]### 
+              load      = 'nakaya'
+
+
+Sent 1 packets.
+
+Sent 1 packets.
+
+Sent 1 packets.
+
+Sent 1 packets.
+
+Sent 1 packets.
+
+Sent 1 packets.
+
+Sent 1 packets.
+
+Sent 1 packets.
+
+Sent 1 packets.
+
+Sent 1 packets.
